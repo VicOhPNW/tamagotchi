@@ -19,11 +19,24 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Tamagotchi',
       template: './src/index.html',
-      inject: 'body'
+      inject: false
     })
   ],
   module: {
     rules: [
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
+      },
       {
         test: /\.css$/,
         use: [
@@ -31,7 +44,7 @@ module.exports = {
           'css-loader'
         ]
       },
-      {                     
+      {
         test: /\.(js|jsx)$/,
         exclude: [
           /node_modules/,

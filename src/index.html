@@ -5,6 +5,28 @@
     <title>Tamagotchi</title>
   </head>
   <body>
-    <p>Tamagotchi</p>
+    <div class="container">
+    <div class="jumbotron">Tamagotchi!</div>
+      <form class="form-group" id="tamagotchiName">
+        <label for="tamagotchi">Please name your Tamagotchi.</label>
+        <input type="text" id="tamagotchiInput">
+        <button type="submit" name="tamagotchi">Make a Tamagotchi</button>
+      </form>
+      <div id="newTamagotchi">
+        <div class="panel panel-info">
+          <div class="panel-body">
+
+            This is <span id="tamaName"></span>, not a pokemon. He is invisible, thanks to Webpacks.<br>
+            Life: <span id="life"></span>
+            Food: <span id="food"></span>
+            <button id="food-button">Feed him</button><br>
+            Sleep: <span id="sleep"></span>
+            <button id="sleep-button">Let him nap, jeez</button><br>
+            Love: <span id="pet"></span>
+            <button id="pet-button">Pet him, for Pete's sake</button><br>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

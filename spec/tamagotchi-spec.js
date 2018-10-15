@@ -5,9 +5,10 @@ describe('Tamagotchi', function(){
 
   beforeEach(function(){
     jasmine.clock().install();
-    bill.setHunger();
-    bill.setSleep();
-    bill.setLove();
+    // bill.setHunger();
+    // bill.setSleep();
+    // bill.setLove();
+    bill.setStats();
   });
   afterEach(function(){
     jasmine.clock().uninstall();
