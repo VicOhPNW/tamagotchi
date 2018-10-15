@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/tamagotchi.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> tamagotchi.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">!function(t){var n={};function e(r){<span class="missing-if-branch" title="if path not taken" >I</span>if(n[r])<span class="cstat-no" title="statement not covered" >return n[r].exports;v</span>ar o=n[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,e),o.l=!0,o.exports}e.m=t,e.c=n,e.d=<span class="fstat-no" title="function not covered" >function(t,n,r){<span class="cstat-no" title="statement not covered" ></span>e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:r})}</span>,e.r=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>Object.defineProperty(t,"__esModule",{value:!0})}</span>,e.n=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>var n=t&amp;&amp;t.__esModule?<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return t.default}</span>:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return t}</span>;<span class="cstat-no" title="statement not covered" >r</span>eturn e.d(n,"a",n),n}</span>,e.o=<span class="fstat-no" title="function not covered" >function(t,n){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(t,n)}</span>,e.p="/var/folders/zz/zyxvpxvq6csfxvn_n00000s4000069/T/_karma_webpack_/",e(e.s=12)}({12:function(module,exports,__webpack_require__){"use strict";eval('\n\nObject.defineProperty(exports, "__esModule", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }\n\nvar Tamagotchi = exports.Tamagotchi = function () {\n  function Tamagotchi(name) {\n    _classCallCheck(this, Tamagotchi);\n\n    this.name = name;\n    this.food = 10;\n    this.sleep = 10;\n    this.love = 10;\n  }\n\n  _createClass(Tamagotchi, [{\n    key: "setHunger",\n    value: function setHunger() {\n      var _this = this;\n\n      setInterval(function () {\n        _this.food--;\n      }, 1000);\n    }\n  }, {\n    key: "setSleep",\n    value: function setSleep() {\n      var _this2 = this;\n\n      setInterval(function () {\n        _this2.sleep--;\n      }, 1000);\n    }\n  }, {\n    key: "setLove",\n    value: function setLove() {\n      var _this3 = this;\n\n      setInterval(function () {\n        _this3.love--;\n      }, 1000);\n    }\n  }]);\n\n  return Tamagotchi;\n}();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvdGFtYWdvdGNoaS5qcz80ODgwIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7SUFDRTtzQkFBWTtBQUNWOztTQUFLLE9BQ0w7U0FBSyxPQUNMO1NBQUssUUFDTDtTQUFLLE9BQ047QUFFRDs7Ozs7QUFDRTs7a0JBQVksWUFDVjtjQUNEO0FBRkQsU0FHRDtBQUVEOzs7O0FBQ0U7O2tCQUFZLFlBQ1Y7ZUFDRDtBQUZELFNBR0Q7QUFFRDs7OztBQUNFOztrQkFBWSxZQUNWO2VBQ0Q7QUFGRCxTQUdEO0FBeEJxQiIsImZpbGUiOiIxMi5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBUYW1hZ290Y2hpIHtcbiAgY29uc3RydWN0b3IobmFtZSkge1xuICAgIHRoaXMubmFtZSA9IG5hbWU7XG4gICAgdGhpcy5mb29kID0gMTA7XG4gICAgdGhpcy5zbGVlcCA9IDEwO1xuICAgIHRoaXMubG92ZSA9IDEwO1xuICB9XG5cbiAgc2V0SHVuZ2VyKCkge1xuICAgIHNldEludGVydmFsKCgpID0+IHtcbiAgICAgIHRoaXMuZm9vZC0tO1xuICAgIH0sIDEwMDApO1xuICB9XG5cbiAgc2V0U2xlZXAoKSB7XG4gICAgc2V0SW50ZXJ2YWwoKCkgPT4ge1xuICAgICAgdGhpcy5zbGVlcC0tO1xuICAgIH0sIDEwMDApO1xuICB9XG5cbiAgc2V0TG92ZSgpIHtcbiAgICBzZXRJbnRlcnZhbCgoKSA9PiB7XG4gICAgICB0aGlzLmxvdmUtLTtcbiAgICB9LCAxMDAwKTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///12\n')}});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Oct 15 2018 10:43:36 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
