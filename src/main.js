@@ -3,8 +3,14 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { Tamagotchi } from './tamagotchi.js';
+import img1 from "./tamaalive.jpg";
+import img2 from "./tamadead.jpg";
 
 $(document).ready(function() {
+  console.log(img1);
+  $("#alive").attr("src", img1);
+  $("#dead").attr("src", img2);
+
   $("#tamagotchiName").submit(function(event){
     event.preventDefault();
 
@@ -24,6 +30,9 @@ $(document).ready(function() {
         $("#life").text("Alive.");
       } else {
         $("#life").text("Dead.")
+        $("#tamaHide").hide();
+        $("#alive").hide();
+        $("#dead").show();
       }
     }, 10);
 

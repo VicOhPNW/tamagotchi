@@ -9,35 +9,38 @@ export class Tamagotchi {
 
   setHunger() {
     setInterval(() => {
-    if (this.food === 0) {
-      this.life = false;
-    } else {
-      this.food--;
-    }, 4000);  //won't run start because it hates the comma here. but when you take the comma away, it hates the semicolon. both should be there
+      if (this.food === 0) {
+        this.life = false;
+      } else {
+        this.food--;
+      }
+    }, 4000);
   }
-}
+
 
   setSleep() {
     setInterval(() => {
-    if (this.sleep === 0) {
-      this.life = false;
-    } else {
-      this.sleep--;
+      if (this.sleep === 0) {
+        this.life = false;
+      } else {
+        this.sleep--;
+      }
     }, 5000);
   }
-}
 
+//
   setLove() {
     setInterval(() => {
-    if (this.love === 0) {
-      this.life = false;
-    } else {
-      this.love--;
+      if (this.love === 0) {
+        this.life = false;
+      } else {
+        this.love--;
+      }
     }, 3000);
   }
-}
 
-  giveFood(){
+
+  giveFood() {
     this.food++;
     console.log("FEED");
   }
@@ -45,22 +48,22 @@ export class Tamagotchi {
     return this.food;
   }
 
-  giveSleep(){
+  giveSleep() {
     this.sleep++;
   }
-  getSleep(){
+  getSleep() {
     return this.sleep;
   }
 
-  giveLove(){
+  giveLove() {
     console.log("WHY");
     this.love++;
   }
-  getLove(){
+  getLove() {
     return this.love;
   }
 
-  getLife(){
+  getLife() {
     return this.life;
   }
 }
